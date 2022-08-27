@@ -18,7 +18,7 @@ Your users should be able to:
 
 ![](src/images/screenshot.jpg)
 
-- Solution URL: (https://www.frontendmentor.io/solutions/intro-component-with-signup-form-36o5VLnnY7#comment-630a01549902683f4a2effeb)
+- Solution URL: (https://www.frontendmentor.io/solutions/intro-component-with-signup-form-36o5VLnnY7)
 - Live Site URL: (https://sage-cobbler-a35870.netlify.app/)
 
 ### Built with
