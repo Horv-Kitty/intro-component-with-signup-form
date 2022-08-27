@@ -14,13 +14,19 @@
     --font-family: 'Poppins', sans-serif;
 }
 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background-color: var(--primary-red);
     margin: 0px;
 }
 
 div.background-image {
-    background: url(images/bg-intro-desktop.png);
+    background: url("images/bg-intro-desktop.png");
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -98,14 +104,16 @@ h2 {
 form {
     display: flex;
     flex-direction: column;
-    width: 300px;
-    min-width: 100%;
+}
+
+form>* {
+    width: 100%
 }
 
 .form-container {
     background-color: white;
     border-radius: 10px;
-    padding: 40px 40px 42px 40px;
+    padding: 1.5rem;
     box-shadow: 0px 7px 1px var(--box-shadow);
 }
 
@@ -170,8 +178,9 @@ button {
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
-    padding-top: 17px;
-    padding-bottom: 14px;
+    padding-block: 17px 14px;
+    padding-inline: 0.8rem;
+    word-break: break-word;
 }
 
 button:hover {
@@ -250,6 +259,9 @@ footer a:active {
 }
 
 @media (min-width: 500px) {
+    .form-container {
+        padding: 40px 40px 42px 40px;
+    }
 
     .first-name-error-icon::after,
     .last-name-error-icon::after,
@@ -292,6 +304,7 @@ footer a:active {
     h1 {
         text-align: start;
         font-size: 48px;
+        margin-bottom: 30px;
     }
 
     h2 {
